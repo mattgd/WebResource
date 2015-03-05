@@ -7,23 +7,26 @@ body {
 }
 .header {
     background: #333;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
     text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
 .header .container {
     text-align: center;
     padding-bottom: 15px;
 }
-.header .container h1, .header .container p {
+.header .container p {
     padding: 10px;
     color: #FFF;
     margin: 0;
 }
+.header .container b {
+    font-size: 1.5em;
+}
 h1 {
     font-size: 3em;
-}
-h1 b {
-    font-size: 1.5em;
+    padding: 10px;
+    color: #FFF;
+    margin: 0;
 }
 a {
     margin: 5px;
@@ -41,8 +44,10 @@ p {
     color: #333;
     padding: 10px;
     text-shadow: none;
-    outline: none;
     border-radius: 5px;
+}
+.categories a:focus {
+    outline: none;
 }
 /*
 Information - #C5AAF5
@@ -52,19 +57,19 @@ Development - #F5A352
 Testing - #FB7374
 Maintenance - #423C40
 */
-.categories #information {
+.categories .information {
     background: #C5AAF5;
 }
-.categories #planning {
+.categories .planning {
     background: #A3CBF1;
 }
-.categories #design {
+.categories .design {
     background: #79BFA1;
 }
-.categories #development {
+.categories .development {
     background: #F5A352;
 }
-.categories #testing {
+.categories .testing {
     background: #FB7374;
 }
 .links {
@@ -89,37 +94,37 @@ Maintenance - #423C40
 .website.information {
     border-top: 4px solid #C5AAF5;
 }
-.website.information h2 a {
+.website.information a {
     color: #C5AAF5;
 }
 .website.planning {
     border-top: 4px solid #A3CBF1;
 }
-.website.planning h2 a {
+.website.planning a {
     color: #A3CBF1;
 }
 .website.design {
     border-top: 4px solid #79BFA1;
 }
-.website.design h2 a {
+.website.design a {
     color: #79BFA1;
 }
 .website.development {
     border-top: 4px solid #F5A352;
 }
-.website.development h2 a {
+.website.development a {
     color: #F5A352;
 }
 .website.testing {
     border-top: 4px solid #FB7374;
 }
-.website.testing h2 a {
+.website.testing a {
     color: #FB7374;
 }
 .website.maintenance {
     border-top: 4px solid #423C40;
 }
-.website.maintenance h2 a {
+.website.maintenance a {
     color: 4px solid #423C40;
 }
 @media screen and (max-width: 900px) {
