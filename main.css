@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+}
+.header {
+    background: #333;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.header .container {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.header .container h1, .header .container p {
+    padding: 10px;
+    color: #FFF;
+    margin: 0;
+}
+h1 {
+    font-size: 3em;
+}
+h1 b {
+    font-size: 1.5em;
+}
+a {
+    margin: 5px;
+    text-decoration: none;
+}
+p {
+    line-height: 1.5em;
+}
+.container {
+    width: 50%;
+}
+.categories {
+    display: block;
+    margin: 10px;
+    width: 100%;
+}
+.categories a {
+    color: #333;
+    padding: 10px;
+    text-shadow: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+/*
+Information - #C5AAF5
+Planning - #A3CBF1
+Design - #79BFA1
+Development - #F5A352
+Testing - #FB7374
+Maintenance - #423C40
+*/
+
+.categories #information {
+    background: #C5AAF5;
+}
+.categories #planning {
+    background: #A3CBF1;
+}
+.categories #design {
+    background: #79BFA1;
+}
+.categories #development {
+    background: #F5A352;
+}
+.categories #testing {
+    background: #FB7374;
+}
+.links .container {
+    margin: 0 auto;
+    text-align: center;
+}
+.links .container a p {
+    background: #EEE;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #4ec49a;
+}
+.website {
+    background: #333 !important;
+    color: #FFF;
+    max-height: 131.813px;
+    width: 45%;
+    margin: 15px;
+    display: inline-block;
+    background: #CCC;
+    border-radius: 3px;
+    padding: 5px;
+}
+.website.information {
+    border-top: 4px solid #C5AAF5;
+}
+.website.information h2 a {
+    color: #C5AAF5;
+}
+.website.planning {
+    border-top: 4px solid #A3CBF1;
+}
+.website.planning h2 a {
+    color: #A3CBF1;
+}
+.website.design {
+    border-top: 4px solid #79BFA1;
+}
+.website.design h2 a {
+    color: #79BFA1;
+}
+.website.development {
+    border-top: 4px solid #F5A352;
+}
+.website.development h2 a {
+    color: #F5A352;
+}
+.website.testing {
+    border-top: 4px solid #FB7374;
+}
+.website.testing h2 a {
+    color: #FB7374;
+}
+.website.maintenance {
+    border-top: 4px solid #423C40;
+}
+.website.maintenance h2 a {
+    color: 4px solid #423C40;
+}

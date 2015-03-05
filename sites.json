@@ -1,0 +1,50 @@
+[
+{
+	"name":"Dribbble",
+	"type":"design",
+	"url":"https://dribbble.com/",
+	"description":"Dribbble is a showcase website for designers. Need some inspiration, or want to share your creations? Try Dribbble!"
+},
+{
+	"name":"Font Family Reunion",
+	"type":"planning",
+	"url":"http://fontfamily.io/",
+	"description":"Font Family Reunion is a resource for checking font compatibility on a variety of different devices."
+},
+{
+	"name":"colourcode",
+	"type":"planning",
+	"url":"http://colourco.de/",
+	"description":"colourcode is a resource for easily creating color schemes for your next project."
+},
+{
+	"name":"BrowserStack",
+	"type":"testing",
+	"url":"http://www.browserstack.com/",
+	"description":"BrowserStack allows you to rapidly test your website for cross browser compatibility across 300+ browsers."
+},
+{
+	"name":"CodyHouse",
+	"type":"development",
+	"url":"http://codyhouse.co/",
+	"description":"CodyHouse is a free library of HTML, CSS, and JavaScript resources."
+},
+{
+	"name":"Web Fundamentals",
+	"type":"information",
+	"url":"https://developers.google.com/web/fundamentals/",
+	"description":"Google Developers Web Fundamentals is a comprehensive resource for multi-device web development."
+},
+{
+	"name":"Stack Overflow",
+	"type":"information",
+	"url":"http://stackoverflow.com/",
+	"description":"Stack Overflow is a question and answer site for professional and enthusiast programmers."
+},
+{
+	"name":"Runnable",
+	"type":"testing",
+	"url":"http://runnable.com/",
+	"description":"Runnable is a web-based coding playground for you to test and share your code."
+}
+]

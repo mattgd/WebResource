@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Delta249er | WebResrc</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="results"></div>
+        <div class="header">
+            <div class="container">
+                 <h1><b>{</b>Web Resource<b>}</b></h1>
+                 <p>A directory of useful resources for web design and development.</p>
+
+                 <p>Web Resource is split up into five different categories:</p>
+                 <div class="categories">
+                     <a id="information" href="#information">Information</a>
+                     <a id="planning" href="#planning">Planning</a>
+                     <a id="design" href="#design">Design</a>
+                     <a id="development" href="#development">Development</a>
+                     <a id="testing" href="#testing">Testing</a>
+                 </div>
+            </div>
+        </div>
+        <div class="links">
+            <div id="directory" class="container">
+                    <script type="text/javascript" language="javascript">
+                    $(document).ready(function() {
+                        $.getJSON( "sites.json", function( data ) {
+                            var items = [];
+                            $.each( data, function( key, val ) {
+
+                                items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
+                            });
+
+                            $( "<div/>", {
+                                "class": "resource-list",
+                                html: items.join( "" )
+                            }).appendTo( "#directory" );
+                        });
+
+                        $("#information, #planning, #design, #development, #testing").click(function() {
+                            var selectorName = $(this).attr( "id" );
+                            $.getJSON( "sites.json", function( data ) {
+                                var items = [];
+                                $.each( data, function( key, val ) {
+                                    if (val.type == selectorName) {
+                                        items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
+                                    }
+                                });
+
+                                $(".resource-list").remove();
+
+                                $( "<div/>", {
+                                    "class": "resource-list",
+                                    html: items.join( "" )
+                                }).appendTo( "#directory" );
+                            });
+                        });
+                    });
+                    </script>
+            </div>
+        </div>
+    </body>
+</html>
