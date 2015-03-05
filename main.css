@@ -3,6 +3,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     color: #333;
+    overflow-x: hidden;
 }
 .header {
     background: #333;
@@ -10,7 +11,6 @@ body {
     text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
 .header .container {
-    margin: 0 auto;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -32,9 +32,6 @@ a {
 p {
     line-height: 1.5em;
 }
-.container {
-    width: 50%;
-}
 .categories {
     display: block;
     margin: 10px;
@@ -46,7 +43,6 @@ p {
     text-shadow: none;
     outline: none;
     border-radius: 5px;
-
 }
 /*
 Information - #C5AAF5
@@ -56,7 +52,6 @@ Development - #F5A352
 Testing - #FB7374
 Maintenance - #423C40
 */
-
 .categories #information {
     background: #C5AAF5;
 }
@@ -72,33 +67,25 @@ Maintenance - #423C40
 .categories #testing {
     background: #FB7374;
 }
-.links .container {
-    margin: 0 auto;
+.links {
     text-align: center;
-}
-.links .container a p {
-    background: #EEE;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #4ec49a;
+    margin: 0 auto;
 }
 .website {
-    background: #333 !important;
+    background: #333;
     color: #FFF;
-    max-height: 131.813px;
-    width: 45%;
-    margin: 15px;
+    width: 47%;
+    margin-top: 2%;
     display: inline-block;
-    background: #CCC;
     border-radius: 3px;
-    padding: 5px;
 }
+
+@media screen and (min-width: 900px) {
+    .website:nth-child(odd) {
+        margin-right: 2%;
+    }
+}
+
 .website.information {
     border-top: 4px solid #C5AAF5;
 }
@@ -134,4 +121,19 @@ Maintenance - #423C40
 }
 .website.maintenance h2 a {
     color: 4px solid #423C40;
+}
+@media screen and (max-width: 900px) {
+
+    .website {
+        width: 97%;
+        margin-right: 0;
+    }
+
+    .categories a {
+        width: 50% !important;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
 }

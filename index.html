@@ -25,44 +25,40 @@
                  </div>
             </div>
         </div>
-        <div class="links">
-            <div id="directory" class="container">
-                    <script type="text/javascript" language="javascript">
-                    $(document).ready(function() {
-                        $.getJSON( "sites.json", function( data ) {
-                            var items = [];
-                            $.each( data, function( key, val ) {
+        <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            $.getJSON( "sites.json", function( data ) {
+                var items = [];
+                $.each( data, function( key, val ) {
 
-                                items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
-                            });
+                    items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
+                });
 
-                            $( "<div/>", {
-                                "class": "resource-list",
-                                html: items.join( "" )
-                            }).appendTo( "#directory" );
-                        });
+                $( "<div/>", {
+                    "class": "links",
+                    html: items.join( "" )
+                }).appendTo( "body" );
+            });
 
-                        $("#information, #planning, #design, #development, #testing").click(function() {
-                            var selectorName = $(this).attr( "id" );
-                            $.getJSON( "sites.json", function( data ) {
-                                var items = [];
-                                $.each( data, function( key, val ) {
-                                    if (val.type == selectorName) {
-                                        items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
-                                    }
-                                });
-
-                                $(".resource-list").remove();
-
-                                $( "<div/>", {
-                                    "class": "resource-list",
-                                    html: items.join( "" )
-                                }).appendTo( "#directory" );
-                            });
-                        });
+            $("#information, #planning, #design, #development, #testing").click(function() {
+                var selectorName = $(this).attr( "id" );
+                $.getJSON( "sites.json", function( data ) {
+                    var items = [];
+                    $.each( data, function( key, val ) {
+                        if (val.type == selectorName) {
+                            items.push( "<div class='website " + val.type + "'><h2><a href='" + val.url + "'>" + val.name + "</a></h2><p>" + val.description + "</p></div>" );
+                        }
                     });
-                    </script>
-            </div>
-        </div>
+
+                    $(".resource-list").remove();
+
+                    $( "<div/>", {
+                        "class": "links",
+                        html: items.join( "" )
+                    }).appendTo( "body" );
+                });
+            });
+        });
+        </script>
     </body>
 </html>
