@@ -46,5 +46,29 @@
 	"type":"testing",
 	"url":"http://runnable.com/",
 	"description":"Runnable is a web-based coding playground for you to test and share your code."
+},
+{
+	"name":"CSS Lint",
+	"type":"testing",
+	"url":"http://csslint.net/",
+	"description":"CSS Lint is a simple CSS analyzer that detects potential errors in your CSS."
+},
+{
+	"name":"CSS Minifier",
+	"type":"testing",
+	"url":"http://cssminifier.com/",
+	"description":"CSS Minifier is a quick and easy tool to minimize the size of your CSS files."
+},
+{
+	"name":"DevDocs",
+	"type":"information",
+	"url":"http://devdocs.io/",
+	"description":"DevDocs is a library of API documentations for a multitude of languages."
+},
+{
+	"name":"Shrthnd",
+	"type":"development",
+	"url":"http://shrthnd.volume7.io/",
+	"description":"Shrthnd converts regular CSS to shorthand CSS."
 }
 ]
