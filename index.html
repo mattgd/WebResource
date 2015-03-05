@@ -17,11 +17,11 @@
 
                  <p>Web Resource is split up into five different categories:</p>
                  <div class="categories">
-                     <a class="information" href="#information">Information</a>
-                     <a class="planning" href="#planning">Planning</a>
-                     <a class="design" href="#design">Design</a>
-                     <a class="development" href="#development">Development</a>
-                     <a class="testing" href="#testing">Testing</a>
+                     <a class="information" id="information" href="#">Information</a>
+                     <a class="planning" id="planning" href="#">Planning</a>
+                     <a class="design" id="design" href="#">Design</a>
+                     <a class="development" id="development" href="#">Development</a>
+                     <a class="testing" id="testing" href="#">Testing</a>
                  </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                         }
                     });
 
-                    $(".resource-list").remove();
+                    $(".links").remove();
 
                     $( "<div/>", {
                         "class": "links",
